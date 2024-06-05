@@ -52,5 +52,6 @@ async function signUpHandler() {
       headers: { 'Content-Type': 'application/json' },
     });
     let data = await res.json();
+    window.location.href = 'login.html';
   }
 }
