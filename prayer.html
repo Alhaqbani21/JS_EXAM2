@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>API Exam 2</title>
-    <link rel="stylesheet" href="./weather.css" />
+    <link rel="stylesheet" href="prayer.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -30,47 +30,39 @@
           />
           Prayer times
         </a>
-        <a
-          style="color: white; text-decoration: none; margin-right: 10px"
-          href="./index.html"
-          id="logOut"
-          >تسجيل خروج</a
-        >
       </div>
     </nav>
-    <div class="containerBody">
-      <h1 style="color: white" id="nameStored"></h1>
-      <h2 id="city" style="color: white">معلومات مدينة الرياض</h2>
-      <div>
-        <input
-          type="text"
-          name="text"
-          class="input"
-          placeholder="ابحث عن مدينة اخرى"
-          style="direction: rtl"
-          id="search"
-        />
+    <div class="prayersContainer">
+      <div class="dateInfo">
+        <h1 class="mx-4" id="date"></h1>
+        <h1 id="dateHijri" class="hidden mx-4"></h1>
+        <h1 id="day"></h1>
+        <button id="changeDate" class="buttonStyle">تحويل التاريخ</button>
       </div>
-
-      <div class="textContainer">
-        <div>
-          <h3 class="cell">درجة الحراره</h3>
-          <h3 class="cell">درجة الرطوبة</h3>
-          <h3 class="cell">خطوط الطول</h3>
-          <h3 class="cell">خطوط العرض</h3>
+      <div class="dateInfo">
+        <h1 id="date">مواعيد الأذان</h1>
+      </div>
+      <div class="prayerTimes">
+        <div class="prayerContainer">
+          <div>الصلوات</div>
+          <div>الفجر</div>
+          <div>الظهر</div>
+          <div>العصر</div>
+          <div>المغرب</div>
+          <div>العشاء</div>
         </div>
-        <div>
-          <h3 id="temp">4</h3>
-          <h3 id="humidity">3</h3>
-          <h3 id="lon">2</h3>
-          <h3 id="lat">1</h3>
+        <div class="timesContainer">
+          <div>اوقات الاذان</div>
+          <div class="cell" id="fajirPrayers"></div>
+          <div class="cell" id="DhuhrPrayers"></div>
+          <div class="cell" id="AsrPrayers"></div>
+          <div class="cell" id="MaghribPrayers"></div>
+          <div class="cell" id="IshaPrayers"></div>
         </div>
       </div>
     </div>
   </body>
-
-  <script src="./weather.js"></script>
-
+  <script src="./prayer.js"></script>
   <script
     src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

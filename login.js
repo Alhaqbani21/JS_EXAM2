@@ -20,8 +20,8 @@ document.getElementById('loginButton').addEventListener('click', async () => {
   });
 
   if (dataFound) {
-    window.location.href = 'home.html';
     localStorage.setItem('name', dataFound.realName);
+    window.location.href = 'home.html';
   } else {
     usernameAlertMessage.style.display = 'block';
     passwordAlertMessage.style.display = 'block';

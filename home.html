@@ -30,17 +30,27 @@
           />
           Prayer times
         </a>
+        <a
+          style="color: white; text-decoration: none; margin-right: 10px"
+          href="./index.html"
+          >تسجيل خروج</a
+        >
       </div>
     </nav>
     <div class="containerButtons">
+      <h1 style="color: white" id="nameStored"></h1>
       <h2 style="color: white">للأنتقال لأحد الصفحات التالية</h2>
       <div>
-        <button>مواعيد الأذان</button>
-        <button>الطقس</button>
+        <a href="./prayer.html"> <button>مواعيد الأذان</button></a>
+        <a href="./weather.html"><button>الطقس</button></a>
       </div>
     </div>
   </body>
-  <script src="./home.js"></script>
+  <script>
+    let nameArea = document.getElementById('nameStored');
+    nameArea.innerText = `${localStorage.getItem('name')} مرحبا`;
+  </script>
+
   <script
     src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
