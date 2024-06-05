@@ -1,0 +1,69 @@
+body {
+  width: 100%;
+  height: max-content;
+  background: linear-gradient(#15191e, #2f3036);
+}
+.hidden {
+  display: none;
+}
+
+.signUpContianer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+}
+.alertMessage {
+  color: red;
+}
+
+.inputsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.inputField {
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  padding: 0.5rem;
+  background-color: #ccc;
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+  transition: 300ms ease-in-out;
+}
+
+.inputField:focus {
+  background-color: white;
+  transform: scale(1.05);
+  box-shadow: 13px 13px 100px #969696, -13px -13px 100px #ffffff;
+}
+
+.buttonStyle {
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #725ac1;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #725ac1;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #725ac1;
+}
+
+.buttonStyle:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #725ac1;
+}
+
+.buttonStyle:active {
+  transform: scale(0.9);
+}
